@@ -13,6 +13,14 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.top = `${newY}px`;
 });
 
+noBtn.addEventListener("click", () => {
+    const newX = Math.random() * (window.innerWidth - noBtn.clientWidth);
+    const newY = Math.random() * (window.innerHeight - noBtn.clientHeight);
+    noBtn.style.position = "absolute";
+    noBtn.style.left = `${newX}px`;
+    noBtn.style.top = `${newY}px`;
+});
+
 yesBtn.addEventListener("click", () => {
     heartLoader.style.display = "block";
     
