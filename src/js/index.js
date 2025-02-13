@@ -5,7 +5,7 @@ const container = document.getElementById("container");
 const resultContainer = document.getElementById("resultContainer");
 const questionContainer = document.getElementById("questionContainer");
 
-noBtn.addEventListener("mouseover", () => {
+noBtn.addEventListener("click", () => {
     const newX = Math.random() * (window.innerWidth - noBtn.clientWidth);
     const newY = Math.random() * (window.innerHeight - noBtn.clientHeight);
     noBtn.style.position = "absolute";
@@ -13,7 +13,7 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.top = `${newY}px`;
 });
 
-noBtn.addEventListener("click", () => {
+noBtn.addEventListener("mouseover", () => {
     const newX = Math.random() * (window.innerWidth - noBtn.clientWidth);
     const newY = Math.random() * (window.innerHeight - noBtn.clientHeight);
     noBtn.style.position = "absolute";
