@@ -11,6 +11,7 @@ noBtn.addEventListener("click", () => {
     noBtn.style.position = "absolute";
     noBtn.style.left = `${newX}px`;
     noBtn.style.top = `${newY}px`;
+    noBtn.style.position = "absolute";
 });
 
 noBtn.addEventListener("mouseover", () => {
