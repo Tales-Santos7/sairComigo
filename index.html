@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quer sair comigo? ❤️</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="shortcut icon" href="./src/img/coracao.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Você quer sair comigo?</title>
 </head>
 <body>
-   
-    <div id="container" class="container">
-   <img src="./src/img/tenor.gif" alt="">
-    <div id="questionContainer">
-        <h2>Quer sair comigo? ❤️</h2>
-        <button id="yesBtn">Sim</button>
-        <button id="noBtn">Não</button>
-    </div>
-</div>
-<div id="heartLoader">❤️❤️❤️</div>
-    <div id="resultContainer">
-        <img class="fim" id="gifResult" src="./src/img/heart-love.gif" alt="" width="500px">
-        <p>Sabia que aceitaria! 😍</p>
+    <div class="container">
+        <h1 class="header_text">Você quer sair comigo?</h1>
+        <div class="gif_container">
+            <img src="https://media.tenor.com/efbi1EpFlVUAAAAi/bugcat-capoo.gif" alt="Cute Capoo GIF">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Sim</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">Não</button>
+        </div>
     </div>
 
-    <script src="./src/js/index.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
